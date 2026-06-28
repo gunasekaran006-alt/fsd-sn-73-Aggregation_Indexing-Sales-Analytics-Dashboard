@@ -9,12 +9,12 @@ const app = express();
 app.use(express.json());
 
 // 1. Dynamic Port Configuration from your .env
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT ;
 
 // 2. Extract DB Strings from your exact key names
 // Falls back to direct string if process.env fails to read the file
-const CLOUD_DB = process.env.atlasport || "mongodb+srv://gunasekaran006_db_user:L18O3ihQFmLYJzlJ@b43-db.o7geprk.mongodb.net/fsd-sn-73-analytics?retryWrites=true&w=majority&appName=b43-db";
-const LOCAL_DB = process.env.dbport || "mongodb://localhost:27017/my-db";
+const CLOUD_DB = process.env.atlasport; 
+const LOCAL_DB = process.env.dbport;
 
 // Note: Right now it connects to Cloud Atlas. Swap with LOCAL_DB if you want local testing.
 const CONNECTION_URI = CLOUD_DB; 
