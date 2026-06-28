@@ -13,8 +13,8 @@ const PORT = process.env.PORT ;
 
 // 2. Extract DB Strings from your exact key names
 // Falls back to direct string if process.env fails to read the file
-const CLOUD_DB = process.env.atlasport; 
-const LOCAL_DB = process.env.dbport;
+const CLOUD_DB = process.env.atlasport ;
+const LOCAL_DB = process.env.dbport ;
 
 // Note: Right now it connects to Cloud Atlas. Swap with LOCAL_DB if you want local testing.
 const CONNECTION_URI = CLOUD_DB; 
